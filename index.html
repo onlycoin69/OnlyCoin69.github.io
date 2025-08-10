@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>OnlyCoin ($OFC) - The Community's Good Bank</title>
+   <!-- Tailwind CSS CDN for styling -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <!-- Font Awesome for social media icons -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   <!-- Custom CSS for gradients and animations -->
+   <style>
+       @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+       body {
+           font-family: 'Inter', sans-serif;
+           background-color: #0d0f12;
+           color: #e2e8f0;
+       }
+
+       .hero-gradient {
+           background-image: linear-gradient(135deg, #FF69B4 0%, #8A2BE2 100%);
+       }
+
+       .card-gradient {
+           background: linear-gradient(45deg, rgba(255, 105, 180, 0.1), rgba(138, 43, 226, 0.1));
+           backdrop-filter: blur(10px);
+           border: 1px solid rgba(255, 255, 255, 0.1);
+       }
+
+       .glow-button {
+           transition: all 0.3s ease-in-out;
+           box-shadow: 0 0 10px #FF69B4, 0 0 20px #8A2BE2;
+       }
+
+       .glow-button:hover {
+           box-shadow: 0 0 15px #FF69B4, 0 0 30px #8A2BE2, 0 0 45px #FF69B4;
+           transform: scale(1.05);
+       }
+
+       .pin-link {
+           transition: transform 0.3s ease-in-out;
+       }
+
+       .pin-link:hover {
+           transform: translateY(-5px);
+       }
+
+       .animate-gradient {
+           background-size: 400% 400%;
+           animation: gradient-animation 15s ease infinite;
+       }
+
+       @keyframes gradient-animation {
+           0% { background-position: 0% 50%; }
+           50% { background-position: 100% 50%; }
+           100% { background-position: 0% 50%; }
+       }
+
+       /* SVG for a simple OnlyCoin logo */
+       .onlycoin-logo-svg {
+           color: #FF69B4;
+           display: inline-block;
+           vertical-align: middle;
+       }
+   </style>
+</head>
+<body class="bg-slate-900 text-slate-200">
+
+   <!-- Hero Section -->
+   <section class="min-h-screen flex items-center justify-center p-4 md:p-8 relative overflow-hidden text-center">
+       <!-- Dynamic gradient background -->
+       <div class="absolute inset-0 bg-gradient-to-br from-fuchsia-700 via-pink-500 to-purple-800 opacity-70 animate-gradient"></div>
+       <div class="relative z-10 space-y-6 max-w-4xl mx-auto p-6 md:p-12 bg-white/10 backdrop-blur-lg rounded-3xl shadow-2xl border border-white/20">
+           <!-- OnlyCoin logo and title -->
+           <div class="flex items-center justify-center space-x-4">
+               <div class="onlycoin-logo-svg w-20 h-20 md:w-24 md:h-24">
+                   <svg viewBox="0 0 100 100" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                       <circle cx="50" cy="50" r="45" stroke="currentColor" stroke-width="4" fill="none"/>
+                       <path d="M 30 50 C 30 20 70 20 70 50 C 70 80 30 80 30 50 Z" stroke="currentColor" stroke-width="4" fill="none"/>
+                       <text x="50" y="58" font-family="'Inter', sans-serif" font-size="20" font-weight="900" text-anchor="middle" fill="currentColor">OFC</text>
+                   </svg>
+               </div>
+               <div>
+                   <h1 class="text-4xl md:text-6xl font-black text-white leading-tight">OnlyCoin ($OFC)</h1>
+                   <p class="text-xl md:text-3xl font-light text-pink-300">The Community's "Good Bank"</p>
+               </div>
+           </div>
+           
+           <p class="mt-4 text-sm md:text-lg text-slate-300">
+               A community-driven initiative leveraging blockchain to create a transparent, decentralized, and inclusive financial ecosystem.
+           </p>
+           
+           <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-6 mt-8">
+               <!-- Whitepaper Link -->
+               <a href="#whitepaper" class="w-full md:w-auto px-8 py-4 bg-white text-slate-900 font-bold text-lg rounded-full shadow-lg hover:bg-slate-200 transition-colors duration-300 transform hover:scale-105">Read the White Paper</a>
+               
+               <!-- Social Media Links -->
+               <div class="flex space-x-6 mt-4 md:mt-0">
+                   <a href="https://x.com/onlycoin69?s=21" target="_blank" rel="noopener noreferrer" class="pin-link text-white hover:text-pink-400">
+                       <i class="fab fa-x-twitter text-4xl md:text-5xl"></i>
+                   </a>
+                   <a href="https://t.me/OnlyCoinOFC" target="_blank" rel="noopener noreferrer" class="pin-link text-white hover:text-pink-400">
+                       <i class="fab fa-telegram-plane text-4xl md:text-5xl"></i>
+                   </a>
+               </div>
+           </div>
+       </div>
+   </section>
+
+   <!-- White Paper Section -->
+   <section id="whitepaper" class="py-12 md:py-20 px-4 md:px-8">
+       <div class="container mx-auto">
+           <h2 class="text-4xl md:text-5xl font-extrabold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-pink-400 to-purple-600">The White Paper</h2>
+
+           <!-- Introduction -->
+           <div class="card-gradient rounded-3xl p-6 md:p-8 mb-8 shadow-xl">
+               <h3 class="text-2xl md:text-3xl font-bold text-pink-300 mb-4">1. Introduction</h3>
+               <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                   The OnlyCoin ($OFC) project is a community-driven initiative aimed at revolutionizing the concept of banking by creating a "good bank" that prioritizes community building and social good. The project seeks to leverage the power of blockchain technology to create a transparent, decentralized, and inclusive financial ecosystem. OnlyCoin will serve as the native token of this ecosystem, empowering community members and driving the project's philanthropic goals.
+               </p>
+           </div>
+
+           <!-- Goals -->
+           <div class="card-gradient rounded-3xl p-6 md:p-8 mb-8 shadow-xl">
+               <h3 class="text-2xl md:text-3xl font-bold text-pink-300 mb-4">2. Goals</h3>
+               <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                   The primary goal of OnlyCoin is to build a community-centric "good bank" that brings people together. This will be achieved through several key objectives:
+               </p>
+               <ul class="list-disc list-inside mt-4 text-slate-300 space-y-2 text-sm md:text-base">
+                   <li>**Community Empowerment:** To provide financial tools and services that are accessible and beneficial to all community members, regardless of their background or economic status.</li>
+                   <li>**Social Impact:** To use a portion of the project's resources to support community initiatives, charitable causes, and projects that align with the "good bank" philosophy.</li>
+                   <li>**Transparency and Trust:** To operate with complete transparency, with all transactions and decisions recorded on the blockchain, fostering trust and accountability within the community.</li>
+                   <li>**Financial Inclusion:** To create a platform that is easy to use and understand, breaking down barriers to financial participation and empowering individuals to take control of their financial futures.</li>
+               </ul>
+           </div>
+
+           <!-- Tokenomics -->
+           <div class="card-gradient rounded-3xl p-6 md:p-8 mb-8 shadow-xl">
+               <h3 class="text-2xl md:text-3xl font-bold text-pink-300 mb-4">3. Tokenomics ($OFC)</h3>
+               <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                   The OnlyCoin ($OFC) token will have a fixed supply and its distribution will be as follows:
+               </p>
+               <ul class="list-disc list-inside mt-4 text-slate-300 space-y-2 text-sm md:text-base">
+                   <li>**50% for Contest Giveaways:** A significant portion of the tokens will be allocated for contests and giveaways, rewarding active community participation and incentivizing engagement. This will be a key mechanism for distributing tokens and growing the community.</li>
+                   <li>**30% for Liquidity:** This allocation will be used to ensure a healthy and stable market for the $OFC token. Providing ample liquidity is crucial for enabling easy trading and price stability.</li>
+                   <li>**15% for CEX Reserves:** These tokens will be reserved for future listings on centralized exchanges (CEXs). This will increase the token's accessibility and market reach.</li>
+                   <li>**5% to the Team:** A small percentage of tokens will be allocated to the founding team. This allocation will be subject to a vesting schedule to ensure long-term commitment to the project's success and to align the team's interests with those of the community.</li>
+               </ul>
+           </div>
+           
+           <!-- Conclusion -->
+           <div class="card-gradient rounded-3xl p-6 md:p-8 mb-8 shadow-xl">
+               <h3 class="text-2xl md:text-3xl font-bold text-pink-300 mb-4">4. Conclusion</h3>
+               <p class="text-slate-300 leading-relaxed text-sm md:text-base">
+                   OnlyCoin ($OFC) is more than just a cryptocurrency; it is a movement towards a more equitable and community-focused financial system. By building a "good bank" that prioritizes people over profits and by leveraging a transparent tokenomics model, OnlyCoin aims to create a lasting positive impact on its community and beyond.
+               </p>
+           </div>
+       </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="text-center py-8 text-slate-500 text-sm">
+       <p>© 2024 OnlyCoin. All rights reserved.</p>
+   </footer>
+
+</body>
+</html>
